@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI for Rural Finance - Empowering Communities</title>
+    <style>
+        /* Base Reset & Variables */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        :root {
+            --primary-color: #2d6a4f; /* Deep Forest Green */
+            --secondary-color: #52b788; /* Mint Green */
+            --accent-color: #f7b731; /* Warm Gold */
+            --dark-color: #1b4332;
+            --light-color: #f8f9fa;
+            --text-color: #333333;
+            --card-bg: #ffffff;
+        }
+
+        body {
+            background-color: var(--light-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--dark-color) 0%, var(--primary-color) 100%);
+            color: #ffffff;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .hero-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .hero h1 span {
+            color: var(--accent-color);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: var(--dark-color);
+            padding: 12px 30px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+            background-color: #f39c12;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 80px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.2rem;
+            color: var(--dark-color);
+            margin-bottom: 50px;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background-color: var(--accent-color);
+            margin: 10px auto 0;
+            border-radius: 2px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            padding: 35px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-top: 5px solid var(--secondary-color);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+        }
+
+        .icon {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        .card h3 {
+            color: var(--dark-color);
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            color: #666;
+            font-size: 0.95rem;
+        }
+
+        /* Call to Action Section */
+        .cta {
+            background-color: #e8f5e9;
+            padding: 60px 20px;
+            text-align: center;
+            border-top: 1px solid #c8e6c9;
+        }
+
+        .cta h2 {
+            color: var(--dark-color);
+            margin-bottom: 15px;
+            font-size: 2rem;
+        }
+
+        .cta p {
+            margin-bottom: 25px;
+            color: #444;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark-color);
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero p {
+                font-size: 1rem;
+            }
+            .section-title {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Banner -->
+    <header class="hero">
+        <div class="hero-container">
+            <h1>Empowering Growth with <span>AI-Driven Rural Finance</span></h1>
+            <p>We leverage cutting-edge artificial intelligence to break down financial barriers, providing tailored credit, risk assessment, and micro-loans directly to rural farmers and small businesses.</p>
+            <a href="#learn-more" class="btn">Explore Our Solutions</a>
+        </div>
+    </header>
+
+    <!-- Main Features -->
+    <section class="features" id="learn-more">
+        <h2 class="section-title">How AI Transforms Rural Banking</h2>
+        <div class="grid">
+            
+            <!-- Card 1 -->
+            <div class="card">
+                <div class="icon">🌾</div>
+                <h3>Alternative Credit Scoring</h3>
+                <p>By analyzing satellite crop imagery, weather patterns, and mobile usage data, our AI models build reliable credit profiles for farmers without traditional bank records.</p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card">
+                <div class="icon">📱</div>
+                <h3>Micro-Loan Automation</h3>
+                <p>Instant digital loan processing designed for feature phones and smartphones alike, delivering capital precisely when seeds, fertilizer, or inventory are needed most.</p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card">
+                <div class="icon">📈</div>
+                <h3>Smart Risk Management</h3>
+                <p>Predictive analytics anticipate market fluctuations and climate events, allowing lenders to structure flexible repayment terms aligned with harvest cycles.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta">
+        <h2>Ready to build a resilient rural economy?</h2>
+        <p>Partner with us to deploy localized, secure, and highly scalable financial intelligence to the communities that feed the world.</p>
+        <a href="mailto:info@example.com" class="btn">Contact Our Team</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 AI for Rural Finance Initiative. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
